@@ -1,0 +1,157 @@
+.carousel-img {
+  max-height: 100vh;
+}
+/* carousel didapat dari index line 68 lalu dipanggil di style css untuk disetting besaran fotonya  */
+
+.carousel-caption {
+  border-top: 10px solid rgba(0, 0, 0, 0);
+  background-color: rgba(255, 255, 255, 0);
+}
+/* perintah ini untuk label dislide menjadi bold hitam tapi gua bikin tranparan*/
+
+.vh-50 {
+  height: 50vh;
+}
+/* untuk about us  */
+
+.primary {
+  color: rgb(0, 0, 0);
+}
+/* untuk menjadikan logo apple berwarna digunakan span agar bisa 2 warna kalau diubah */
+
+.active {
+  color: black !important;
+}
+/* dipanggil dari index biar jadi hitam warnanya */
+
+.title-container {
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.title-container h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: black;
+  bottom: 0;
+  left: calc(50% - 25px);
+}
+/* untuk mengatur garis yg ada di abput us */
+
+.about-us-title {
+  font-size: 45px;
+}
+/* ngatur ukuran dibawah about us */
+
+.about-us-subtitle {
+  font-size: 25px;
+}
+/* ngatur ukuran dibawah about us */
+
+.card-icon {
+  transition: 0.5s;
+}
+/* biar kalau cursor dideketin jadi udh berubah warna */
+
+.card-icon:hover {
+  color: black;
+}
+/* biar kalau logo kartu cc jadi warna hitam */
+
+.mansory-sizer,
+.mansory-item {
+  width: 30%;
+}
+/* javascrip agar foto bisa ngikut sama framenya */
+
+.brand-image {
+  width: 50%;
+  object-fit: cover;
+  filter: grayscale(1);
+  transition: 0.5s;
+}
+/* untuk membuat gambar gry dan jika didekatkan cursa berwarna */
+
+.brand-image:hover {
+  filter: grayscale(0);
+  transform: scale(1.2);
+}
+/* untuk membuat gambar lebih besar dari ukuran aslinuya */
+
+.btn-subscribe,
+.btn-to-top {
+  background: gray;
+}
+/* biar pencetan subscire jadi gry */
+
+.btn-to-top {
+  display: inline;
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+}
+.bg-darker {
+  background: #111;
+}
+
+.portofolio-filters li {
+  transition: 0.5s;
+  cursor: pointer;
+  /* untuk mengubah cursotr menjadi pointer */
+}
+
+.portofolio-filters .filter-active,
+.breadcumbs {
+  background: gray;
+}
+
+.breadcumbs {
+  margin-top: 53px;
+}
+
+.breadcumbs ol li + li::before {
+  display: inline-block;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  content: "/";
+}
+
+.card-img-top {
+  height: 400px;
+  object-fit: cover;
+}
+/* untuk membuat foto semetris agar sama */
+
+.img-testimonial {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+}
+
+.testimonial-item .card-body h4 {
+  font-size: 18px;
+}
+
+.btn-submit {
+  background: gray;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .mansory-sizer,
+  .mansory-item {
+    width: 40%;
+  }
+}
+
+@media (max-width: 576px) {
+  .mansory-sizer,
+  .mansory-item {
+    width: 100%;
+  }
+}
+/* ini untuk membuat foto di portofgolio menjadii mengikuti framenya saat dikecilkan  */
